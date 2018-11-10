@@ -3,7 +3,7 @@
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
-<html lang="en">
+<html lang="es">
 
 @section('htmlheader')
     @include('adminlte::layouts.partials.htmlheader')
@@ -40,7 +40,8 @@ desired effect
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
-        @include('adminlte::layouts.partials.contentheader')
+        {{-- Esto es para colocar el titulo sobre el contenido y los niveles pero fijo 
+            @include('adminlte::layouts.partials.contentheader') --}}
 
         <!-- Main content -->
         <section class="content">
