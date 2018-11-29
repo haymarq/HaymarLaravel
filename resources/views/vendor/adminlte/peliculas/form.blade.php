@@ -1,11 +1,11 @@
 <div class="form-group row">
+	<div class="col-sm-6"> 
+		{!! Form::label('Imagen', 'Imagen de la pelicula') !!}
+		{!! Form::file('imagenP', ['class' => 'form-control']) !!}
+	</div>
 	<div class="col-sm-6">
 		{!! Form::label('Nombre', 'Nombre de la pelicula') !!}
 		{!! Form::text('Nombre', null, ['class' => 'form-control']) !!}
-	</div>
-	<div class="col-sm-6">
-		{!! Form::label('Descripcion', 'Descripción de la pelicula') !!}
-		{!! Form::text('Descripcion', null, ['class' => 'form-control']) !!}
 	</div>
 </div>
 
@@ -28,6 +28,13 @@
 	<div class="col-sm-6">
 		{!! Form::label('Clase', 'Clase de la pelicula') !!}
 		{!! Form::select('Clase', array('' => 'Seleccione','A' => 'A', 'B' => 'B', 'C' => 'C', 'D' => 'D'), null, ['class' => 'form-control']) !!}
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-sm-12">
+		{!! Form::label('Descripcion', 'Descripción de la pelicula') !!}
+		{!! Form::textarea('Descripcion', null, ['class' => 'form-control']) !!}
 	</div>
 </div>
 

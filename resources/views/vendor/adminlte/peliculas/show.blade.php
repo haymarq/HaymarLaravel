@@ -25,36 +25,41 @@
 					<div class="panel-heading">Datos de la Pelicula</div>
 
 					<div class="panel-body">
-						<div class="form-group row">
-							<div class="col-sm-6">
-								{!! Form::label('Nombre', 'Nombre de la pelicula') !!}
-								{!! Form::text('Nombre', $peliculas->Nombre, ['class' => 'form-control', 'readonly' => true]) !!}
+						<div class="row">
+							<div class="col-sm-3">
+								<img src="{{ $peliculas->imagenP }}" style="width: 100%; height: 200px;">
 							</div>
-							<div class="col-sm-6">
-								{!! Form::label('Descripcion', 'Descripción de la pelicula') !!}
-								{!! Form::text('Descripcion', $peliculas->Descripcion, ['class' => 'form-control', 'readonly' => true]) !!}
-							</div>
-						</div> 
+							<div class="form-group row col-sm-9">
+								<div class="col-sm-6">
+									{!! Form::label('Nombre', 'Nombre de la pelicula') !!}
+									{!! Form::text('Nombre', $peliculas->Nombre, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
+								<div class="col-sm-6">
+									{!! Form::label('Descripcion', 'Descripción de la pelicula') !!}
+									{!! Form::text('Descripcion', $peliculas->Descripcion, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
+							</div> 
 
-						<div class="form-group row">
-							<div class="col-sm-6">
-								{!! Form::label('Estreno', 'Estreno de la pelicula') !!}
-								{!! Form::date('Estreno', $peliculas->Estreno, ['class' => 'form-control', 'readonly' => true]) !!}
+							<div class="form-group row col-sm-9">
+								<div class="col-sm-6">
+									{!! Form::label('Estreno', 'Estreno de la pelicula') !!}
+									{!! Form::date('Estreno', $peliculas->Estreno, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
+								<div class="col-sm-6">
+									{!! Form::label('Genero', 'Género de la pelicula') !!}
+									{!! Form::text('Genero', $peliculas->Genero, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
 							</div>
-							<div class="col-sm-6">
-								{!! Form::label('Genero', 'Género de la pelicula') !!}
-								{!! Form::text('Genero', $peliculas->Genero, ['class' => 'form-control', 'readonly' => true]) !!}
-							</div>
-						</div>
 
-						<div class="form-group row">
-							<div class="col-sm-6">
-								{!! Form::label('Director', 'Director de la pelicula') !!}
-								{!! Form::text('Director', $peliculas->Director, ['class' => 'form-control', 'readonly' => true]) !!}
-							</div>
-							<div class="col-sm-6">
-								{!! Form::label('Clase', 'Clase de la pelicula') !!}
-								{!! Form::text('Clase', $peliculas->Clase, ['class' => 'form-control', 'readonly' => true]) !!}
+							<div class="form-group row col-sm-9">
+								<div class="col-sm-6">
+									{!! Form::label('Director', 'Director de la pelicula') !!}
+									{!! Form::text('Director', $peliculas->Director, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
+								<div class="col-sm-6">
+									{!! Form::label('Clase', 'Clase de la pelicula') !!}
+									{!! Form::text('Clase', $peliculas->Clase, ['class' => 'form-control', 'readonly' => true]) !!}
+								</div>
 							</div>
 						</div>
 

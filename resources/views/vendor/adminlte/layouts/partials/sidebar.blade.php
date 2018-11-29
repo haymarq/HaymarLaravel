@@ -42,8 +42,8 @@
                 </ul>
             </li>-->
             
-            <li><a href="{{ route('peliculas.index') }}"><i class='fa fa-square'></i> <span>{{ trans('adminlte_lang::message.pelicula') }}</span></a></li>
-            <li><a href="#"><i class='fa fa-briefcase'></i> <span>{{ trans('adminlte_lang::message.cine') }}</span></a></li>
+            <li><a class="{{ active('peliculas') }}" href="{{ route('peliculas.index') }}"><i class='fa fa-square'></i> <span>{{ trans('adminlte_lang::message.pelicula') }}</span></a></li>
+            <li><a class="{{ active('cines') }}" href="{{ route('cines.index') }}"><i class='fa fa-briefcase'></i> <span>{{ trans('adminlte_lang::message.cine') }}</span></a></li>
             <li><a href="#"><i class='fa fa-file'></i> <span>{{ trans('adminlte_lang::message.cartelera') }}</span></a></li>
 
         </ul><!-- /.sidebar-menu -->

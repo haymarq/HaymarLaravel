@@ -27,7 +27,7 @@
 					@include('vendor.adminlte.layouts.errors')
 
 					<div class="panel-body">
-						{!! Form::model($peliculas, ['route' => ['peliculas.update', $peliculas->id], 'method' => 'PUT']) !!}
+						{!! Form::model($peliculas, ['route' => ['peliculas.update', $peliculas->id], 'method' => 'PUT', 'files' => true]) !!}
 
 							@include('vendor.adminlte.peliculas.form')
 

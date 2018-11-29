@@ -25,3 +25,4 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::resource('peliculas','PeliculasController');
+Route::resource('cines','CinesController');

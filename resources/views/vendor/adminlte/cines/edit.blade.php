@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-	{{ trans('adminlte_lang::message.pelicula') }}
+	{{ trans('adminlte_lang::message.cine') }}
 @endsection
 
 
@@ -9,7 +9,7 @@
 	<!-- Content Header (Page header) -->
 	<section class="content-header" style="margin-bottom: 10px;">
 	    <h1>
-	        @yield('contentheader_title', 'Peliculas')
+	        @yield('contentheader_title', 'Cines')
 	        <small>@yield('contentheader_description')</small>
 	    </h1>
 	    <ol class="breadcrumb">
@@ -22,15 +22,14 @@
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0">
 				<div class="panel panel-default">
-					<div class="panel-heading">Registro de Pelicula</div>
+					<div class="panel-heading">Modificar Cine</div>
+
+					@include('vendor.adminlte.layouts.errors')
 
 					<div class="panel-body">
+						{!! Form::model($cines, ['route' => ['cines.update', $cines->id], 'method' => 'PUT', 'files' => true]) !!}
 
-						@include('vendor.adminlte.layouts.errors')
-
-						{!! Form::open(['route' => 'peliculas.store', 'files' => true]) !!}
-
-							@include('vendor.adminlte.peliculas.form')
+							@include('vendor.adminlte.cines.form')
 
 						{!! Form::close() !!}
 					</div>

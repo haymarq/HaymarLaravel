@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PeliculasRequest extends FormRequest
+class CinesRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,13 +24,11 @@ class PeliculasRequest extends FormRequest
     public function rules()
     {
         return [
-            'imagenP'        => 'required',
-            'Nombre'        => 'required|min:3|max:150',
-            'Descripcion'   => 'required|min:3|max:255',
-            'Estreno'       => 'required|date',
-            'Genero'        => 'required',
-            'Director'      => 'required|min:3|max:100',
-            'Clase'         => 'required'
+            'imagenC'        => 'required',
+            'nombre'         => 'required|min:3|max:150',
+            'ubicacion'      => 'required|min:3|max:100',
+            'contacto'       => 'required|numeric|digits_between:11,11',
+            'pagina'         => 'required|min:3|max:100'
         ];
     }
 
@@ -50,7 +48,6 @@ class PeliculasRequest extends FormRequest
             "min"              => "El campo :attribute debe contener al menos :min caracteres.",
             "unique"           => "El campo :attribute ya ha sido registrado.",
             "email"            => "El campo :attribute no tiene un correo válido",
-            "date"             => "El campo :attribute no tiene una fecha válida.",
 
             /*"accepted"         => ":attribute debe ser aceptado.",
             "active_url"       => ":attribute no es una URL válida.",

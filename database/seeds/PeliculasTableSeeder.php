@@ -12,6 +12,7 @@ class PeliculasTableSeeder extends Seeder
     public function run()
     {
     	DB::table('peliculas')->insert([
+            'imagenP'     => 'http://localhost:8000/imagenesP/imagen.png',
     		'Nombre'        => 'Batman',
             'Descripcion'   => 'Pelicula de super héroes',
     		'Estreno'       => '2008-10-23',
@@ -20,6 +21,7 @@ class PeliculasTableSeeder extends Seeder
             'Clase'         => 'B',
     	]);
     	DB::table('peliculas')->insert([
+            'imagenP'     => 'http://localhost:8000/imagenesP/imagen.png',
             'Nombre'        => 'Infinity War',
     		'Descripcion'   => 'Pelicula de super héroes',
     		'Estreno'       => '2018-06-21',
@@ -28,6 +30,7 @@ class PeliculasTableSeeder extends Seeder
             'Clase'         => 'A',
     	]);
     	DB::table('peliculas')->insert([
+            'imagenP'     => 'http://localhost:8000/imagenesP/imagen.png',
             'Nombre'        => 'Bajo la misma estrella',
     		'Descripcion'   => 'Pelicula sobre el cáncer',
     		'Estreno'       => '2016-08-18',
@@ -36,6 +39,7 @@ class PeliculasTableSeeder extends Seeder
             'Clase'         => 'A',
     	]);
     	DB::table('peliculas')->insert([
+            'imagenP'     => 'http://localhost:8000/imagenesP/imagen.png',
             'Nombre'        => 'IT',
     		'Descripcion'   => 'Pelicula de terror con un payaso',
     		'Estreno'       => '2018-07-12',
@@ -44,6 +48,7 @@ class PeliculasTableSeeder extends Seeder
             'Clase'         => 'B',
     	]);
     	DB::table('peliculas')->insert([
+            'imagenP'     => 'http://localhost:8000/imagenesP/imagen.png',
             'Nombre'        => 'Minions',
     		'Descripcion'   => 'Pelicula sobre los minions',
     		'Estreno'       => '2018-01-28',
